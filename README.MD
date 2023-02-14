@@ -1,6 +1,6 @@
-This repository is an test assessment exercise for the system under test: https://www.saucedemo.com/
+This repository is an test assessment exercise for the system: https://www.saucedemo.com/
 
-***** Author: Jude Bordallo *****
+**Author: Jude Bordallo**
 
 **TEST CASES**
 
