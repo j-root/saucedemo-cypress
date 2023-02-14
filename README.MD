@@ -6,11 +6,17 @@ This repository is an test assessment exercise for the system: https://www.sauce
 
 UI: validate products are complete [testcase](test_cases/ui_test_case.txt)
 
-Navigation: end to end lifecycle of shopping [testcase](test_cases/navigation_test_case.txt)
+Navigation: end to end lifecycle of shopping transaction [testcase](test_cases/navigation_test_case.txt)
 
-Functional: filtering/sorting scenarios [testcase](test_cases/functional_test_case.txt)
+Functional: 
+(a) Clearing of current shopping cart
+(b) Calculation of transaction per checkoout
+[testcase](test_cases/functional_test_case.txt)
 
-Edge: caching of cart when checkout is delayed  [testcase](test_cases/edge_test_case.txt)
+Edge: 
+(a) Caching of shopping cart per user
+(b) Checkout with no empty cart
+[testcase](test_cases/edge_test_case.txt)
 
 
 **BUGS**
