@@ -13,7 +13,9 @@ Functional: filtering/sorting scenarios [testcase](test_cases/functional_test_ca
 Edge: caching of cart when checkout is delayed  [testcase](test_cases/edge_test_case.txt)
 
 
-*** Bugs discovery ***
+**BUGS**
+
+
 See the 'known_issues.txt' for details: [bugs](bugs/known_issues.txt)
 
 1. User cannot transact in website (problem_user)
@@ -48,7 +50,7 @@ See the 'known_issues.txt' for details: [bugs](bugs/known_issues.txt)
 ![Alt text](scope/no_email_to_validate.png)
 
 
-*** How to install ***
+**INSTALLATION**
 1. git clone the repository to local machines
 2. npm install
 3. npx cypress open 
