@@ -12,8 +12,7 @@ Functional: filtering/sorting scenarios
 
 Edge: caching of cart when checkout is delayed 
 
-
-[Excel Test Case](../cloned-saucedemo/saucedemo-cypress/test_cases/Sauce%20Demo%20Test%20Cases.xlsx)
+[Excel Test Case](test_cases/Sauce%20Demo%20Test%20Cases.xlsx)
 
 
 **BUGS**
