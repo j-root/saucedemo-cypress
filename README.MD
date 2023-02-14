@@ -1,8 +1,9 @@
 This repository is an test assessment exercise for the system under test: https://www.saucedemo.com/
 
-*** Author: Jude Bordallo ***
+***** Author: Jude Bordallo *****
 
-*** TEST CASES ***
+**TEST CASES**
+
 UI: validate products are complete [testcase](test_cases/ui_test_case.txt)
 
 Navigation: end to end lifecycle of shopping [testcase](test_cases/navigation_test_case.txt)
