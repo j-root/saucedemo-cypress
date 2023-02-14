@@ -1,0 +1,51 @@
+Edge Test Case: 
+
+*** Caching of shopping cart per user ***
+
+	|	Steps										|	Expected Result    										| 	Comment								    |
+1.	|	Go to saucedemo website						|	saucedemo is loaded successfully						|										    |
+2.	| 	Enter credentials for standard_user			|	credentials are accepted and redirected to inventory	|	standard_user ; secret_sauce		    |
+            - type username
+            - type password
+            - click login button
+3.	| 	Validate products are loaded after login	| 	All 6 products are loaded with the following details:	|	given these are static resources	    |	
+															- image of products
+															- product name
+															- product description
+															- product price
+															- button to add product in cart
+4.  |   Add 1 product to cart in homepage            |   Cart is updated of added product(s)                     |   Default qty is 1 per product            |
+            - click 'Add to Cart' button
+5.  |   Logout from saucedemo as standard_user      |   User is logged from saucedemo session                   |                                           |
+6.  | 	Enter credentials as performance_glitch_user|	credentials are accepted								|	performance_glitch_user; secret_sauce	|
+            - type username
+            - type password
+            - click login button
+7.  |   Validate cart of current user               |   Cart should be empty                                    |                                           |
+8.  |   Add two products in cart                    |   Cart is updated with updated products                   |                                           |
+9.  |   Logout from saucedemo as standard_user      |   User is logged from saucedemo session                   |                                           |
+10. | 	Enter credentials for standard_user			|	credentials are accepted and redirected to inventory	|	standard_user ; secret_sauce		    |
+            - type username
+            - type password
+            - click login button
+11. |   Validate cart of current user               |   Cart should have 1 product                              |                                           |
+
+
+
+*** Checkout with no empty cart ***
+
+	|	Steps										|	Expected Result    										| 	Comment								|
+1.	|	Go to saucedemo website						|	saucedemo is loaded successfully						|	https://www.saucedemo.com/			|
+2.	| 	Enter credentials for standard_user			|	credentials are accepted and redirected to inventory	|	standard_user ; secret_sauce		|
+            - type username
+            - type password
+            - click login button
+3.	| 	Validate products are loaded after login	| 	All 6 products are loaded with the following details:	|	given these are static resources	|	
+															- image of products
+															- product name
+															- product description
+															- product price
+															- button to add product in cart
+4.  |   Make sure no product is added               |   Cart is empty                                           |                                       |
+5.  |   Checkout existing cart                      |   Validation to not allow user to proceed                 |                                       |
+

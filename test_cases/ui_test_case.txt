@@ -1,0 +1,19 @@
+UI Test Case: 
+
+Validate products are loaded and visible in saucedemo
+
+	|	Steps										|	Expected Result    										| 	Comment								|
+1.	|	Go to saucedemo website						|	saucedemo is loaded successfully						|	https://www.saucedemo.com/			|
+2.	| 	Enter credentials for standard_user			|	credentials are accepted and redirected to inventory	|	standard_user ; secret_sauce		|
+3.	| 	Validate products are loaded after login	| 	All 6 products are loaded with the following details:	|	given these are static resources	|	
+															- image of products
+															- product name
+															- product description
+															- product price
+															- button to add product in cart
+4.  |	Select product								| 	Product details are displayed like in inventory page	|										|
+															- image of products
+															- product name
+															- product description
+															- product price
+															- button to add/remove product in cart

@@ -1,0 +1,58 @@
+Navigation Test Case: 
+
+*** Clearing of current shopping cart ***
+
+	|	Steps										|	Expected Result    										| 	Comment								|
+1.	|	Go to saucedemo website						|	saucedemo is loaded successfully						|	https://www.saucedemo.com/			|
+2.	| 	Enter credentials for standard_user			|	credentials are accepted and redirected to inventory	|	standard_user ; secret_sauce		|
+            - type username
+            - type password
+            - click login button
+3.	| 	Validate products are loaded after login	| 	All 6 products are loaded with the following details:	|	given these are static resources	|	
+															- image of products
+															- product name
+															- product description
+															- product price
+															- button to add product in cart
+4.  |   Add products to cart in homepage            |   Cart is updated of added product(s)                     |   Default qty is 1 per product        |
+            - click 'Add to Cart' button
+5   |   Clear shopping cart                         |   Cart is empty                                           |   Issue: button is still 'Remove'     |
+            - click burger button (upper left)          Product removed should reset to 'Add to cart'
+            - select 'reset app state' in menu
+
+
+
+
+
+*** Calculation of transaction per checkoout ***
+
+	|	Steps										|	Expected Result    										| 	Comment								|
+1.	|	Go to saucedemo website						|	saucedemo is loaded successfully						|										|
+2.	| 	Enter credentials for standard_user			|	credentials are accepted								|										|
+3.	| 	Validate products are loaded after login	| 	All 6 products are loaded with the following details:	|	given these are static resources	|	
+															- image of products
+															- product name
+															- product description
+															- product price
+															- button to add product in cart
+4.  |   Add product  to cart in homepage            |   Cart is updated of added product(s)                     |   Default qty is 1 per product        |
+                                                                                                                    Given product selected: 
+                                                                                                                        - Sauce Labs Backpack ($29.99)
+5.  |   Go to cart                                  |   User redirected to shopping cart                        |                                       |
+            - click 'Cart' in upper right               
+6.  |   Validate shopping cart                      |   Cart have added product                                 |                                       |      
+7.  |   Checkout existing cart                      |   User redirected to user information                     |                                       | 
+8.  |   Fillup user information form                |   User details are accepted and redirected to overview    |                                       |
+            - type first name
+            - type last name
+            - type zip code
+            - click 'continue' button
+9.  |   Validate transaction details                |   User redirected to shopping cart                        |                                       |         
+                                                            - transaction have 1 product
+                                                            - each product have 1 qty
+                                                            - price of backpack should be: $29.99
+                                                            - payment information is displayed
+                                                            - shipping information is displayed
+                                                            - item total is correct = $29.99
+                                                            - tax calculation is correct = $2.40 (8%)
+                                                            - grand total is correct = item total + tax 

@@ -1,0 +1,32 @@
+Known issues: 
+
+Labels: 
+    Priority: low/medium/high
+    Severity: Showstopper/Critical/Major/Minor/Cosmetic
+
+
+    |   Issue |                                     |   Module/grouping     |   Priority    |  Severity     |
+1.  |   User cannot transact in website             |   Accounts            |   high        |  Showstopper  |
+2.  |   Reset app state removes items from cart     |   Menu                |   Medium      |  Major        |
+        but does not reset the functionality of 
+        adding products into cart 
+3.  |   Checkout without an item in cart            |   Cart Transaction    |   high        |   Critical    |
+
+
+OTHERS: 
+1. Enter spaces in details
+2. 404 page when going to 'About' page with problem_user
+3. Images loaded with problem_user is different from standard_user
+4. problem_user => filter/sort is not working
+5. checkout overview doesn't show personal details entered 
+6. item not found using problem_user
+7. blank pages using problem_user 
+
+
+Note: 
+Typically a bug should have the following: 
+    - description of bug
+    - steps to reproduce
+    - priority and severity (but subjective per organization)
+    - environment
+    - evidence (whether logs, screenshots, transaction id)
