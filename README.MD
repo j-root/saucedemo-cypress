@@ -5,11 +5,15 @@ This repository is an test assessment exercise for the system: https://www.sauce
 **TEST CASES**
 
 UI: validate products are complete 
+
 Navigation: end to end lifecycle of shopping 
+
 Functional: filtering/sorting scenarios 
+
 Edge: caching of cart when checkout is delayed 
 
-[label](../cloned-saucedemo/saucedemo-cypress/test_cases/Sauce%20Demo%20Test%20Cases.xlsx)
+
+[Excel Test Case](../cloned-saucedemo/saucedemo-cypress/test_cases/Sauce%20Demo%20Test%20Cases.xlsx)
 
 
 **BUGS**
@@ -21,7 +25,7 @@ See the 'known_issues.txt' for details: [bugs](bugs/known_issues.txt)
 2. Reset app state removes items from cart not updating cart realtime
 3. Checkout without an item in cart 
 
-[label](bugs/SauceDemo%20Known%20Issues%20.docx)
+[Word Known Issues](bugs/SauceDemo%20Known%20Issues%20.docx)
 
 
 **Scenarios to be automate**
