@@ -6,6 +6,7 @@ const {
     problemuser,
     glitchuser
 } = require('../utility/users')
+const home = require('../pages/home')
 
 describe('Saucedemo Login Scenarios', () => {
 
@@ -13,21 +14,37 @@ describe('Saucedemo Login Scenarios', () => {
         cy.visit(Cypress.config('baseUrl'));
     })
 
-    it('login standard user', function(){
-        login.loginIntoSauceDemo(standarduser);
+    context('valid credentials', function(){
+
+        it('login standard user', function(){
+            login.loginIntoSauceDemo(standarduser);
+        })
+
+        it('login problematic user', function(){
+            login.loginIntoSauceDemo(problemuser);
+        })
+    
+        it('login glitched user', function(){
+            login.loginIntoSauceDemo(glitchuser);
+        })
+    
+        afterEach(() => {
+            home.logoutFromSauceDemo();
+        })
     })
 
-    it('login locked out user', function(){
-        login.loginIntoSauceDemo(lockeduser);
+
+    context('invalid credentials', function(){
+        
+        it('login locked out user', function(){
+            login.loginIntoSauceDemo(lockeduser);
+            login.isLoginFailed();
+        })
+
     })
 
-    it('login problematic user', function(){
-        login.loginIntoSauceDemo(problemuser);
-    })
 
-    it('login glitched user', function(){
-        login.loginIntoSauceDemo(glitchuser);
-    })
+
 
 
 })

@@ -20,9 +20,9 @@ Edge: caching of cart when checkout is delayed
 7. checkout overview doesn't show personal details entered 
 
 *** Scenarios to be automated ***
-1. login/logout scenarios
-2. shopping scenarios
-3. sorting products in inventory
+1. login/logout scenarios - DONE
+2. shopping scenarios - DONE
+3. sorting products in inventory - partially done
 
 *** Out-of-scope scenarios in automation ***
 1. no api connections in login and checkout

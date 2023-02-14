@@ -5,7 +5,8 @@ class Login {
     elements = {
         usernameTxtbx: () => cy.get('#user-name'),
         passwordTxtbx: () => cy.get('#password'),
-        loginBtn: () => cy.get('#login-button')
+        loginBtn: () => cy.get('#login-button'),
+        errorMessage: () => cy.get('[data-test="error"]')
     }
 
     loginIntoSauceDemo(user) {
@@ -16,6 +17,10 @@ class Login {
         this.elements.loginBtn()
             .should('be.visible')
             .click();
+    }
+
+    isLoginFailed(){
+        this.elements.errorMessage().should('be.visible')
     }
 
 }
