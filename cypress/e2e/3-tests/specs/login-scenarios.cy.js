@@ -14,17 +14,18 @@ describe('Saucedemo Login Scenarios', () => {
         cy.visit(Cypress.config('baseUrl'));
     })
 
-    context('valid credentials', function(){
+    
+    context('valid credentials',  function(){
 
-        it('login standard user', function(){
+        it('login standard user', { tags: '@login'}, function(){
             login.loginIntoSauceDemo(standarduser);
         })
 
-        it('login problematic user', function(){
+        it('login problematic user', { tags: '@login'}, function(){
             login.loginIntoSauceDemo(problemuser);
         })
     
-        it('login glitched user', function(){
+        it('login glitched user', { tags: '@login'}, function(){
             login.loginIntoSauceDemo(glitchuser);
         })
     
@@ -34,7 +35,7 @@ describe('Saucedemo Login Scenarios', () => {
     })
 
 
-    context('invalid credentials', function(){
+    context('invalid credentials', { tags: '@login'}, function(){
         
         it('login locked out user', function(){
             login.loginIntoSauceDemo(lockeduser);

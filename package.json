@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:login": "npx cypress run --headless --browser chrome --spec ./cypress/e2e/3-tests/specs/login-scenarios.cy.js",
+    "test:misc": "npx cypress run --headless --browser chrome --spec ./cypress/e2e/3-tests/specs/miscellaneous.cy.js",
+    "test:shop": "npx cypress run --headless --browser chrome --spec ./cypress/e2e/3-tests/specs/shopping-scenario.cy.js",
+    "test:sort": "npx cypress run --headless --browser chrome --spec ./cypress/e2e/3-tests/specs/sorting-scenarios.cy.js",
+    "test:saucedemo": "npx cypress run --headless --browser chrome --spec ./cypress/e2e/3-tests/specs/runall-scenarios.cy.js"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +18,9 @@
     "cypress": "^12.5.1"
   },
   "devDependencies": {
+    "@cypress/grep": "^3.1.4",
     "@faker-js/faker": "^7.6.0",
-    "cjs-faker": "^0.1.0"
+    "cjs-faker": "^0.1.0",
+    "mochawesome": "^7.1.3"
   }
 }

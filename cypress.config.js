@@ -9,8 +9,8 @@ module.exports = defineConfig({
     },
     specPattern: "cypress/e2e/**/*.cy.js",
     baseUrl: 'https://saucedemo.com',
-    chromeWebSecurity: false
-    
+    chromeWebSecurity: false,
+    reporter: 'mochawesome',
     
   },
 });

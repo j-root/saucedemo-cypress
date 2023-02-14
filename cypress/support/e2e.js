@@ -18,3 +18,8 @@ import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+
+// Cypress grep plugin
+const registerCypressGrep = require('@cypress/grep')
+registerCypressGrep()

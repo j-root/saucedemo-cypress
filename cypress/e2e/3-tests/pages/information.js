@@ -33,6 +33,10 @@ class Checkout_Information{
         this.elements.continueBtn().should('be.visible').click();
     }
 
+    isCartEmpty(){
+        this.elements.firstnameTxtbx().should('not.be.visible');
+    }
+
 }
 
 module.exports = new Checkout_Information()

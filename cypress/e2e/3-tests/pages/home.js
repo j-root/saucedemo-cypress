@@ -10,7 +10,8 @@ class Inventory {
         resetappLink: () => cy.get('#reset_sidebar_link'),
         goToCartBtn: () => cy.get('#shopping_cart_container > a'),
         addToCartBtns: () => cy.contains('Add to cart'),
-        sortDrpdown: () => cy.get('[data-test="product_sort_container"]')
+        sortDrpdown: () => cy.get('[data-test="product_sort_container"]'),
+        closeMenuBtn: () => cy.get('#react-burger-cross-btn')
     }
 
     navigateToAllItemsPage() {
@@ -31,6 +32,7 @@ class Inventory {
     emptyMyShoppingCart() {
         this.elements.burgerBtn().should('be.visible').click();
         this.elements.resetappLink().should('be.visible').click();
+        this.elements.closeMenuBtn().should('be.visible').click();
     }
 
     goToMyShoppingCart() {

@@ -12,7 +12,7 @@ export const lockeduser = new User(Cypress.env('LOCKED_USER'), Cypress.env('PASS
 
 export const problemuser = new User(Cypress.env('PROBLEM_USER'), Cypress.env('PASSWORD_USERS'));
 
-export const glitchuser = new User(Cypress.env('PROBLEM_USER'), Cypress.env('PASSWORD_USERS'));
+export const glitchuser = new User(Cypress.env('PERFORMANCE_GLITCH_USER'), Cypress.env('PASSWORD_USERS'));
 
 
 const fakeUserInfo = () => ({
