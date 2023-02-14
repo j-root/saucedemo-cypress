@@ -3,26 +3,17 @@ This repository is an test assessment exercise for the system under test: https:
 *** Author: Jude Bordallo ***
 
 *** TEST CASES ***
-UI: validate products are complete
+UI: validate products are complete [testcase](test_cases/ui_test_case.txt)
 
-[label](test_cases/ui_test_case.txt)
+Navigation: end to end lifecycle of shopping [testcase](test_cases/navigation_test_case.txt)
 
-Navigation: end to end lifecycle of shopping
+Functional: filtering/sorting scenarios [testcase](test_cases/functional_test_case.txt)
 
-[label](test_cases/navigation_test_case.txt)
-
-Functional: filtering/sorting scenarios
-
-[label](test_cases/functional_test_case.txt)
-
-Edge: caching of cart when checkout is delayed
-
-[label](test_cases/edge_test_case.txt)
+Edge: caching of cart when checkout is delayed  [testcase](test_cases/edge_test_case.txt)
 
 
 *** Bugs discovery ***
-See the 'known_issues.txt' for details: 
-[label](bugs/known_issues.txt)
+See the 'known_issues.txt' for details: [bugs](bugs/known_issues.txt)
 
 1. User cannot transact in website (problem_user)
 ![Alt text](bugs/item_not_found_problem_user.png)
