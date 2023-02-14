@@ -4,13 +4,12 @@ This repository is an test assessment exercise for the system under test: https:
 
 **TEST CASES**
 
-UI: validate products are complete [testcase](test_cases/ui_test_case.txt)
+UI: validate products are complete 
+Navigation: end to end lifecycle of shopping 
+Functional: filtering/sorting scenarios 
+Edge: caching of cart when checkout is delayed 
 
-Navigation: end to end lifecycle of shopping [testcase](test_cases/navigation_test_case.txt)
-
-Functional: filtering/sorting scenarios [testcase](test_cases/functional_test_case.txt)
-
-Edge: caching of cart when checkout is delayed  [testcase](test_cases/edge_test_case.txt)
+[label](../cloned-saucedemo/saucedemo-cypress/test_cases/Sauce%20Demo%20Test%20Cases.xlsx)
 
 
 **BUGS**
@@ -19,17 +18,11 @@ Edge: caching of cart when checkout is delayed  [testcase](test_cases/edge_test_
 See the 'known_issues.txt' for details: [bugs](bugs/known_issues.txt)
 
 1. User cannot transact in website (problem_user)
-![Alt text](bugs/item_not_found_problem_user.png)
-![Alt text](bugs/random_errors.png)
-![Alt text](bugs/home_problem_user.png)
-
 2. Reset app state removes items from cart not updating cart realtime
-![Alt text](bugs/current_cart_with_products.png)
-![Alt text](bugs/after_emptying_cart.png)
-
 3. Checkout without an item in cart 
-![Alt text](bugs/empty_cart.png)
-![Alt text](bugs/empty_overview_products.png)
+
+[label](bugs/SauceDemo%20Known%20Issues%20.docx)
+
 
 **Scenarios to be automate**
 1. login/logout scenarios - DONE

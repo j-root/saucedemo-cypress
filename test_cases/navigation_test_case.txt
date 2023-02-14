@@ -18,32 +18,32 @@ Complete shopping transaction of a user
             - click 'Add to Cart' button
 5   |   Remove product in current cart              |   Cart is updated of removed product                      |   Default qty is 1 per product        |
             - click 'Remove' button
-4.  |	Select product								| 	Product details are displayed like in inventory page	|	Eg. Sauce Labs Backpack 			|
+6.  |	Select product								| 	Product details are displayed like in inventory page	|	Eg. Sauce Labs Backpack 			|
 															- image of products
 															- product name
 															- product description
 															- product price
 															- button to add/remove product in cart
-5.  |   Add product to cart                         |   Cart is updated with product                            |   Default qty is 1                    |
-6   |   Go back to products/inventory page          |   User redirected to inventory home page                  |                                       |
+7.  |   Add product to cart                         |   Cart is updated with product                            |   Default qty is 1                    |
+8.  |   Go back to products/inventory page          |   User redirected to inventory home page                  |                                       |
             - click 'Back to Products' button
-7.  |   Add all remaining products to cart          |   Cart is updated and should have 6 products              |                                       |
+9.  |   Add all remaining products to cart          |   Cart is updated and should have 6 products              |                                       |
             - click 'Add to Cart' per product
-8.  |   Go to cart                                  |   User redirected to shopping cart                        |                                       |
+10. |   Go to cart                                  |   User redirected to shopping cart                        |                                       |
             - click 'Cart' in upper right               
-9.  |   Validate shopping cart                      |   Shopping have the following details                     |                                       |      
+11. |   Validate shopping cart                      |   Shopping have the following details                     |                                       |      
                                                             - cart have all 6 products
                                                             - each product have 1 qty
                                                             - each product have details: name, description and price
                                                             - remove button is displayed per product
                                                             - user capable of going back and checkout
-10. |   Checkout existing cart                      |   User redirected to user information                     |                                       | 
-11. |   Fillup user information form                |   User details are accepted and redirected to overview    |                                       |
+12. |   Checkout existing cart                      |   User redirected to user information                     |                                       | 
+13. |   Fillup user information form                |   User details are accepted and redirected to overview    |                                       |
             - type first name
             - type last name
             - type zip code
             - click 'continue' button
-12. |   Validate transaction details                |   User redirected to shopping cart                        |                                       |         
+14. |   Validate transaction details                |   User redirected to shopping cart                        |                                       |         
                                                             - transaction have 6 products
                                                             - each product have 1 qty
                                                             - each product have details:  name, description and price
@@ -52,5 +52,5 @@ Complete shopping transaction of a user
                                                             - item total is correct = $129.94
                                                             - tax calculation is correct = $10.40 (8%)
                                                             - grand total is correct = item total + tax 
-13. |   Finished and complete transaction           |   Transaction is complete and successful                  |                                       |           
+15. |   Finished and complete transaction           |   Transaction is complete and successful                  |                                       |           
             - click 'finish' button                         - cart is also empty

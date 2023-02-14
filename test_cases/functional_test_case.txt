@@ -24,7 +24,7 @@ Navigation Test Case:
 
 
 
-*** Calculation of transaction per checkoout ***
+*** Calculation of transaction per checkout ***
 
 	|	Steps										|	Expected Result    										| 	Comment								|
 1.	|	Go to saucedemo website						|	saucedemo is loaded successfully						|										|
