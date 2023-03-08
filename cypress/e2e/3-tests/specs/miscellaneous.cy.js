@@ -9,10 +9,6 @@ const cart = require('../pages/cart')
 const userinfo = require('../pages/information')
 const { back_pack, bike_light } = require('../utility/sauce-products')
 
-
-// To be populated soon if time permits
-// For edge scenarios....
-
 describe('Edge case scenarios to automate', () => {
 
     beforeEach(() => {
